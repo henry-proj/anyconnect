@@ -8,11 +8,11 @@ This script is to solve the problem that the Cisco anyconnect client cannot reme
    The format is `"VPN_ADDRESS USERNAME PASSWORD"`, one per line, there is a space between the address and the username, there is a space between the username and the password, be careful not to forget the double quotes ("")
    ```shell
    ...
-CONN_INFO=(
-"VPN_ADDRESS USERNAME PASSWORD"
-"vpn.github.com:8843 zhangsan 123456"
-)
-...
+   CONN_INFO=(
+   "VPN_ADDRESS USERNAME PASSWORD"
+   "vpn.github.com:8843 zhangsan 123456"
+   )
+   ...
    ```
 Save and exit the script after the modification is complete
 4. Use bash ./connect-vpn.sh
