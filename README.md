@@ -24,7 +24,7 @@ This script is to solve the problem that the Cisco anyconnect client cannot reme
    For example
    ```shell
    echo "alias conn='/Users/zhangsan/scripts/connect-vpn.sh'" >> ~/.zshrc
-   source.zshrc
+   source .zshrc
    ```
    In this way, you can execute `conn` every time in the terminal.
 6. Script parameter description
