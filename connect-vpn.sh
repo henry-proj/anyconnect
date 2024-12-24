@@ -42,10 +42,10 @@ check_and_stop_anyconnect() {
         exit 1
     fi
 
-	if pgrep -f "AnyConnect" > /dev/null; then
+	if pgrep -f "AnyConnect Secure Mobility Client.app" > /dev/null; then
 		read -r -p "The AnyConnect Secure Mobility Client is running. Do you want to stop the desktop client? (y/N): "  response
 		if [[ "$response" == "y" || "$response" == "Y" ]]; then
-			pkill -f "AnyConnect"
+			pkill -f "AnyConnect Secure Mobility Client.app"
 			echo "The desktop client has stopped."
 		else
 			echo "Please exit the desktop client before running this script"
